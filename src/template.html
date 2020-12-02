@@ -12,10 +12,9 @@
     <meta name="description" content="My name is Saumya Bhatt and I am a full-stack web developer and Python Developer." />
 
     <!-- Required librarys -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
     <script>
       ScrollReveal({ reset: false });
@@ -116,8 +115,29 @@
     text-align: left;
   }
 
+  .skills > div {
+    margin: 80px auto;
+  }
   .skill_box {
     display: flex;
+  }
+  .mr-3 {
+    width: 40px;
+    height: auto;
+  }
+  .skill-box {
+    display: flex;
+  }
+  .others {
+    display: flex;
+  }
+  .progress-box {
+    width: 50%;
+    text-align: left;
+    padding: 0 30px;
+  }
+  .icon-box {
+    padding: 0 40px;
   }
 
   /* Media queries - Responsive timeline on screens less than 600px wide */
@@ -152,8 +172,21 @@
     left: 0%;
     }
 
-    .skill_box {
+    .skills > div {
+      margin: 30px auto;
+    }
+    .skill-box {
       display: inline-block;
+    }
+    .others {
+      display: inline-block;
+    }
+    .progress-box {
+      width: 100%;
+      padding: 20px 0;
+    }
+    .icon-box {
+      padding: 30px 0;
     }
   }
 </style>
@@ -202,7 +235,7 @@
                 I am an engineer persuing a degree in Electrical and Electronics from BITS-Pilani, Goa Campus. I have developed numerous websites and web applications from scratch, with a clientel ranging from corporate companies and National Institutions to international conferences.
               </p>
               <p class="about-wrapper__info-text">
-                Having a strong grasp on git processes to streamline deployment, Linux Environments, various hosting methods, as well as implmenting sound network security practices so that the end product is not only easy to maintain, but is also highly stable and scalable.
+                Having a strong grasp on git processes to streamline deployment, Linux Environments, various hosting methods, as well as implmenting sound network security practices so that the end product is not only easy to maintain, but is also highly secure, stable and scalable.
               </p>
               <p class="about-wrapper__info-text">
                 My hobbies include playing football, badminton and reading books. You can checkout my movie review blog at <a href='https://movies-by-the-sea.herokuapp.com/' >Movies By the Sea.</a>
@@ -249,7 +282,7 @@
               <div class="project-wrapper__image">
                 <a href="https://streamlit-dashboard.herokuapp.com/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/sentiment.jpg" />
+                    <img class="img-fluid" src="./assets/projects/sentiment.jpg" />
                   </div>
                 </a>
               </div>
@@ -279,7 +312,7 @@
               <div class="project-wrapper__image">
                 <a href="https://github.com/Saumya-Bhatt/Twitter-Clone" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/twitter.png" />
+                    <img class="img-fluid" src="./assets/projects/twitter.png" />
                   </div>
                 </a>
               </div>
@@ -309,7 +342,7 @@
               <div class="project-wrapper__image">
                 <a href="https://github.com/Saumya-Bhatt/NIO-Dashboard/tree/master/5.0" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="./assets/nio.png" />
+                    <img class="img-fluid" src="./assets/projects/nio.png" />
                   </div>
                 </a>
               </div>
@@ -339,7 +372,7 @@
               <div class="project-wrapper__image">
                 <a href="https://scsc-2020.netlify.app/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="https://raw.githubusercontent.com/Saumya-Bhatt/SCSC-2020-Conference/master/img/SCSC_SS.png" />
+                    <img class="img-fluid" src="./assets/projects/SCSC_SS.png" />
                   </div>
                 </a>
               </div>
@@ -369,7 +402,7 @@
               <div class="project-wrapper__image">
                 <a href="https://celbitsgoa.in/" target="_blank">
                   <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="https://raw.githubusercontent.com/Saumya-Bhatt/CEL-BITS-Goa-Website/master/assets/img/CEL_SS.png" />
+                    <img class="img-fluid" src="./assets/projects/CEL_SS.png" />
                   </div>
                 </a>
               </div>
@@ -391,25 +424,32 @@
             <div class="container_box left">
               <div class="content-box">
                 <h2><b>CSIR National Institue of Oceanology</b></h2>
-                <h4>Summer Intern <span style="color: turquoise;">May 2020 - November 2020</span></h4><br>
+                <h4>Summer Intern <span style="color: turquoise;">June 2020 - November 2020</span></h4><br>
                 <p>Involved in making a web based dashboard for controlling an underwater marine robot.Dashboard would be used to upload mission files to the server (made using PHP, Apache and MySQL) and would be executed in real time using Ajax requests.</p>
               </div>
             </div>
             <div class="container_box right">
+              <div class="content-box">
+                <h2><b>Government of West Bengal</b></h2>
+                <h4>Summer Intern <span style="color: turquoise;">May 2020 - June 2020</span></h4><br>
+                <p>Part of college internship, led a team of 5 people to update and optimise the website of Self-Help Group and Employment department (SHG & SE) department of Gov. of WB. Also prepared data analytics model to understand the demographics of the department's users.</p>
+              </div>
+            </div>
+            <div class="container_box left">
               <div class="content-box">
                 <h2><b>Sandbox Innovation Labs</b></h2>
                 <h4>Outreach Coordinator <span style="color: turquoise;">May 2020 - Present</span></h4><br>
                 <p>Responsible for the outreach and publicity of the Sandbox Student Committee and being the point-of-contact for companies looking to affiliate with the Sandbox Innovation Labs, BITS-Pilani, Goa Campus. Was also the website lead for the Sandbox dynamic website's development from scratch.</p>
               </div>
             </div>
-            <div class="container_box left">
+            <div class="container_box right">
               <div class="content-box">
                 <h2><b>Huloq Chatbots and Analytics</b></h2>
                 <h4>Web Developer <span style="color: turquoise;">December 2019 - March 2020</span></h4><br>
                 <p>Responsible for managing, developing and updating the frontend and the backend for Huloq Cahtbot and Analytics. Used MySQL databse and google OAuth for login requests and managing user database.</p>
               </div>
             </div>
-            <div class="container_box right">
+            <div class="container_box left">
               <div class="content-box">
                 <h2><b>Center for Technical Incubation</b></h2>
                 <h4>Course Instructor <span style="color: turquoise;">August 2019 - December 2019</span></h4><br>
@@ -427,39 +467,174 @@
         <div class="project-wrapper">
           <h2 class="section-title dark-blue-text">Skills</h2>
 
-          <div class="skill_box">
+          <div class='skills'>
 
-            <div style="text-align: left; width: 33%;">
-              <h3><b>Languages</b></h3><br>
-              <ul style="font-size: 1.5em;">
-                <li>HTML5 CSS3</li>
-                <li>Javascript</li>
-                <li>Python</li>
-                <li>C++</li>
-                <li>JQuery, Ajax</li>
-                <li>PHP</li>
-                <li>SQL</li>
-              </ul>
-            </div><br>
+            <div class='skill-box'>
 
-            <div style="text-align: left; width: 33%;">
-              <h3><b>Environments</b></h3><br>
-              <ul style="font-size: 1.5em;">
-                <li>Arduino</li>
-                <li>Xilinx</li>
-                <li>Cadence</li>
-                <li>AutoCAD</li>
-                <li>Adobe Suite</li>
-              </ul>
-            </div><br>
+              <div class='progress-box'>
+                <h3 style='font-weight: bold; text-align:center'>Frameworks</h3>
+                <br>
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img src="./assets/icons/flask.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Flask Python</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img src="./assets/icons/django.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Django Python</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img src="./assets/icons/react.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">React.js</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-info" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
 
-            <div style="text-align: left; width: 33%;">
-              <h3><b>Frameworks</b></h3><br>
-              <ul style="font-size: 1.5em;">
-                <li>Flask</li>
-                <li>Streamlit</li>
-                <li>REST APIs</li>
-              </ul>
+              <div class='progress-box'>
+                <h3 style='font-weight: bold; text-align:center'>Languages</h3>
+                <br>
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img src="./assets/icons/python.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Python</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img src="./assets/icons/html.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">HTML | CSS </h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 95%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img src="./assets/icons/javascript.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Javascript</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img src="./assets/icons/java.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Java</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar" role="progressbar" style="width: 65%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+              <div class='progress-box'>
+                <h3 style='font-weight: bold; text-align:center'>Database</h3>
+                <br>
+                <ul class="list-unstyled">
+                  <li class="media">
+                    <img src="./assets/icons/mysql.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">MySQL</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media my-4">
+                    <img src="./assets/icons/sqlite.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">SQLite</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 100%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                  <li class="media">
+                    <img src="./assets/icons/mongodb.png" class="mr-3" alt="...">
+                    <div class="media-body">
+                      <h5 class="mt-0 mb-1">Mongo DB</h5>
+                        <div class="progress" style="height: 20px;">
+                          <div class="progress-bar bg-success" role="progressbar" style="width: 77%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                        </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+
+            <div class='others'>
+
+              <div class='icon-box'>
+                <h3 style='font-weight: bold; text-align:center'>Cloud and Hosting</h3>
+                <br>
+                <a href='https://firebase.google.com/'>
+                  <img src="./assets/icons/firebase.png" style='width:70px' class="mr-3" alt="Google Firebase">
+                </a>
+                <a href='https://www.heroku.com/'>
+                  <img src="./assets/icons/heroku.png" style='width:60px' class="mr-3" alt="Heroku">
+                </a>
+                <a href='https://www.netlify.com/'>
+                  <img src="./assets/icons/netlify.png" style='width:60px' class="mr-3" alt="Netlify">
+                </a>
+              </div>
+
+              <div class='icon-box'>
+                <h3 style='font-weight: bold; text-align:center'>Tools and Environments</h3>
+                <br>
+                <a href='https://git-scm.com/'>
+                  <img src="./assets/icons/git.png" style='width:60px' class="mr-3" alt="Git">
+                </a>
+                <a href='https://github.com/'>
+                  <img src="./assets/icons/github.png" style='width:60px' class="mr-3" alt="Github">
+                </a>
+                <a href='https://www.linux.org/'>
+                  <img src="./assets/icons/linux.png" style='width:50px' class="mr-3" alt="Linux">
+                </a>
+                <a href='https://code.visualstudio.com/'>
+                  <img src="./assets/icons/vscode.png" style='width:50px' class="mr-3" alt="VS code">
+                </a>
+                <a href='https://www.jetbrains.com/idea/'>
+                  <img src="./assets/icons/intellij.png" style='width:50px' class="mr-3" alt="Intellij">
+                </a>
+              </div>
+
+              <div class='icon-box'>
+                <h3 style='font-weight: bold; text-align:center'>Adobe Suite</h3>
+                <br>
+                <a href='https://www.adobe.com/in/products/illustrator.html'>
+                  <img src="./assets/icons/illustrator.png" style='width:50px' class="mr-3" alt="Adobe Illustrator">
+                </a>
+                <a href='https://www.adobe.com/products/premiere.html'>
+                  <img src="./assets/icons/premierpro.png" style='width:50px' class="mr-3" alt="Adobe Premier Pro">
+                </a>
+                <a href='https://www.adobe.com/in/products/photoshop.html'>
+                  <img src="./assets/icons/photoshop.png" style='width:50px' class="mr-3" alt="Adobe Photoshop">
+                </a>
+              </div>
+
             </div>
 
           </div>
@@ -479,7 +654,7 @@
         </h2>
         <div class="contact-wrapper">
           <p class="contact-wrapper__text">
-            Like my work? Get in touch with me to collaborate on more projects! Always open to internship and/or employment opportunities!
+            Like my work? Get in touch with me to collaborate on more projects! Always open to internship and employment opportunities!
           </p>
           <a
             target="_blank"
