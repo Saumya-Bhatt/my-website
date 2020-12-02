@@ -199,13 +199,13 @@
           <div class="col-md-6 col-sm-12">
             <div class="about-wrapper__info">
               <p class="about-wrapper__info-text">
-                I am an engineer persuing a degree in Electrical and Electronics from BITS-Pilani, Goa Campus. I have developed and built numerous websites and web applications from scratch, both professionally for corporate companies and institutions while extending my services to College Clubs and Professors to host International Conferences.
+                I am an engineer persuing a degree in Electrical and Electronics from BITS-Pilani, Goa Campus. I have developed numerous websites and web applications from scratch, with a clientel ranging from corporate companies and National Institutions to international conferences.
               </p>
               <p class="about-wrapper__info-text">
-                All this have sharpened my skill, as well as streamlined the method with which I develope websites and webapps. Hve a strong grasp on git and github, Linux Environments, deployment and hosting techniques, as well as implmenting sound network security practices so that the end product is not only easy to maintain, but is also highly stable and scalable.
+                Having a strong grasp on git processes to streamline deployment, Linux Environments, various hosting methods, as well as implmenting sound network security practices so that the end product is not only easy to maintain, but is also highly stable and scalable.
               </p>
               <p class="about-wrapper__info-text">
-                My hobbies include playing football, badminton and Gardening and like to watch movies, Formula1 and read books. You can checkout my movie review blog at <a href='https://movies-by-the-sea.herokuapp.com/' >Movies By the Sea</a>.
+                My hobbies include playing football, badminton and reading books. You can checkout my movie review blog at <a href='https://movies-by-the-sea.herokuapp.com/' >Movies By the Sea.</a>
               </p>
               <span class="d-flex mt-3">
                 <a class="cta-btn cta-btn--resume" target="_blank" href="https://www.docdroid.net/5WapO36/saumya-bhatt-resume-pdf">
@@ -231,15 +231,45 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
+                <h3 class="project-wrapper__text-title">Sentiment Analysis WebApp</h3>
+                <div>
+                  <p class="mb-4">
+                    A streamlit (python) based project which parses through the dtatset of reviews by all the users of US airline's tweets and classifies as positive, negative or neutral and stores it in a CSV file along with the time and location of the user. Dataset was obtained from Kaggel and hosted on heroku.
+                  </p>
+                </div>
+                <a target="_blank" class="cta-btn cta-btn--hero" href="https://streamlit-dashboard.herokuapp.com/">
+                  See Live
+                </a>
+                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Saumya-Bhatt/Streamlit-Dashboard">
+                  Source Code
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-8 col-sm-12">
+              <div class="project-wrapper__image">
+                <a href="https://streamlit-dashboard.herokuapp.com/" target="_blank">
+                  <div data-tilt class="thumbnail rounded">
+                    <img class="img-fluid" src="./assets/sentiment.png" />
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- /END Project -->
+
+          <!-- Each .row is a project -->
+          <div class="row">
+            <div class="col-lg-4 col-sm-12">
+              <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Twitter Clone</h3>
                 <div>
                   <p class="mb-4">
                     Made a fully functional Twitter clone with full backend and frontend functionalities. Made using Flask (Python Framework), it had a fully developed login and cookie manager, relational database facilites to store tweets and user data, and even had a 'forgot password' mail-retrieval feature.
                   </p>
                 </div>
-                {% comment %} <a target="_blank" class="cta-btn cta-btn--hero" href="http://movies-by-the-sea.herokuapp.com/">
+                <!--<a target="_blank" class="cta-btn cta-btn--hero" href="http://movies-by-the-sea.herokuapp.com/">
                   See Live
-                </a> {% endcomment %}
+                </a>-->
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Saumya-Bhatt/Twitter-Clone">
                   Source Code
                 </a>
@@ -261,45 +291,15 @@
           <div class="row">
             <div class="col-lg-4 col-sm-12">
               <div class="project-wrapper__text">
-                <h3 class="project-wrapper__text-title">Sentiment Analysis WebApp</h3>
-                <div>
-                  <p class="mb-4">
-                    A streamlit (python) based project which parses through the dtatset of reviews by all the users of US airline's tweets and classifies as positive, negative or neutral and stores it in a CSV file along with the time and location of the user. Dataset was obtained from Kaggel and hosted on heroku.
-                  </p>
-                </div>
-                <a target="_blank" class="cta-btn cta-btn--hero" href="https://streamlit-dashboard.herokuapp.com/">
-                  See Live
-                </a>
-                <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Saumya-Bhatt/Streamlit-Dashboard">
-                  Source Code
-                </a>
-              </div>
-            </div>
-            <div class="col-lg-8 col-sm-12">
-              <div class="project-wrapper__image">
-                <a href="https://streamlit-dashboard.herokuapp.com/" target="_blank">
-                  <div data-tilt class="thumbnail rounded">
-                    <img class="img-fluid" src="https://raw.githubusercontent.com/Saumya-Bhatt/Streamlit-Dashboard/master/dashboard_SS.png" />
-                  </div>
-                </a>
-              </div>
-            </div>
-          </div>
-          <!-- /END Project -->
-
-          <!-- Each .row is a project -->
-          <div class="row">
-            <div class="col-lg-4 col-sm-12">
-              <div class="project-wrapper__text">
                 <h3 class="project-wrapper__text-title">Dynamic Dashboard</h3>
                 <div>
                   <p class="mb-4">
                     Made as a part of my internship at CSIR-NIO, this project included having a frontend dashboard which was made completely using python and could be updated with a latency of 1s. Functionalities included offline mapping using rasterization and live camare feed stream. It also involved configuring a backend using Apache servers and hosting a MySQL database. A project which reflectes my stance as a Fullstack Web Developer.
                   </p>
                 </div>
-                {% comment %} <a target="_blank" class="cta-btn cta-btn--hero" href="http://movies-by-the-sea.herokuapp.com/">
+                <!--<a target="_blank" class="cta-btn cta-btn--hero" href="http://movies-by-the-sea.herokuapp.com/">
                   See Live
-                </a> {% endcomment %}
+                </a>-->
                 <a target="_blank" class="cta-btn text-color-main" href="https://github.com/Saumya-Bhatt/NIO-Dashboard/tree/master/5.0">
                   Source Code
                 </a>
@@ -324,7 +324,7 @@
                 <h3 class="project-wrapper__text-title">SCSC 2020 Conference</h3>
                 <div>
                   <p class="mb-4">
-                    Official website for the Society for Cognitive Science and Culture to be takking place in Goa on February 2020. Made using HTML,CSS,JS and Bootstrap. The website had the backend structure made using PHP and cloud databse services by Google Firebase. Also integrated Google Analytics to the projects.
+                    Official website for the Society for Cognitive Science and Culture that took place in Goa on February 2020. Made using HTML,CSS,JS and Bootstrap. The website had the backend structure made using Ajax and cloud databse services by Google Firebase. Also integrated Google Analytics to the projects.
                   </p>
                 </div>
                 <a target="_blank" class="cta-btn cta-btn--hero" href="https://scsc-2020.netlify.app/">
